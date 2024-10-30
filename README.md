@@ -1,2 +1,2 @@
 # Opc_Connect
-Windows Based UI connecting to PLC's via OPC-UA and testing Machine Sequences
+Windows Based UI for connecting to PLC's via OPC-UA and for testing Machine Sequences
