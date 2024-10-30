@@ -1,0 +1,48 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:VM="clr-namespace:OPCua_APP.ViewModel.PopupViewModels"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <DataTemplate DataType="{x:Type VM:DialogViewModel}">
+        <Border
+            Height="250"
+            Padding="40"
+            HorizontalAlignment="Center"
+            Background="White">
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <TextBlock
+                    MaxWidth="450"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontFamily="Open Sans"
+                    FontSize="20"
+                    FontWeight="Normal"
+                    Foreground="#2D2D2D"
+                    Text="{Binding Label}"
+                    TextAlignment="Center"
+                    TextWrapping="Wrap" />
+
+                <Button
+                    Width="176"
+                    Height="46"
+                    Margin="0,20,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    materialDesign:ButtonAssist.CornerRadius="5"
+                    Background="DarkRed"
+                    BorderThickness="0"
+                    Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                    Content="Okay"
+                    FontFamily="Open Sans"
+                    FontSize="16"
+                    FontWeight="SemiBold"
+                    Foreground="White" />
+
+            </StackPanel>
+        </Border>
+    </DataTemplate>
+
+</ResourceDictionary>
